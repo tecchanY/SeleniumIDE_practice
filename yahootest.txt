@@ -1,0 +1,102 @@
+{
+  "id": "1bf58bda-f8f5-4b33-a255-714510efd16c",
+  "version": "2.0",
+  "name": "yahoo",
+  "url": "https://www.yahoo.co.jp/",
+  "tests": [{
+    "id": "9712e159-f181-4306-84b3-e2d2d8770b65",
+    "name": "yahoo_test",
+    "commands": [{
+      "id": "885b6e4e-79e5-42e1-966a-09b1195ddc2f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.yahoo.co.jp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c491f06a-d608-4fd6-a599-c681d108bc53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08397386-c56c-4787-979e-d7db6c11fd5f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(6) .\\_1TCzQONRwuX9Joqzy35uo2",
+      "targets": [
+        ["css=li:nth-child(6) .\\_1TCzQONRwuX9Joqzy35uo2", "css:finder"],
+        ["xpath=//div[@id='wrapper']/header/section/div/ul/li[6]/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e32d7aa8-5277-4761-84c3-a7ce911eb30d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=li:nth-child(6) .\\_1TCzQONRwuX9Joqzy35uo2",
+      "targets": [
+        ["css=li:nth-child(6) .\\_1TCzQONRwuX9Joqzy35uo2", "css:finder"],
+        ["xpath=//div[@id='wrapper']/header/section/div/ul/li[6]/a/span/span", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8da832c-32eb-491b-9c45-1a80dc452816",
+      "comment": "",
+      "command": "type",
+      "target": "name=p",
+      "targets": [
+        ["name=p", "name"],
+        ["css=.\\_1wsoZ5fswvzAoNYvIJgrU4", "css:finder"],
+        ["xpath=//input[@name='p']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/header/section/div/form/fieldset/span/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "今日のニュース"
+    }, {
+      "id": "63abb9a4-0f68-4652-b933-e0922d834cd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.PHOgFibMkQJ6zcDBLbga8",
+      "targets": [
+        ["css=.PHOgFibMkQJ6zcDBLbga8", "css:finder"],
+        ["xpath=//div[@id='wrapper']/header/section/div/form/fieldset/span/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7d15989-5a04-4a9d-9866-9d0165e7e99b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=今日のニュース - goo ニュース",
+      "targets": [
+        ["linkText=今日のニュース - goo ニュース", "linkText"],
+        ["css=.w:nth-child(1) > .hd a", "css:finder"],
+        ["xpath=//div[@id='WS2m']/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://search.yahoo.co.jp/wrs/FOR=5mNNCDdV3ih2P4xr6nga4GuF00GQZAvLnOrQshcjdjtEdtb1qMerPelhIL93rf3a.EozbmeMScmlz_WbdcZlhANjb_8rua8BTslrJLwmjD3GryLHCupNaAw5tBKISa1TKFZgfR9jVUqUETvY5uQn69lodZVsHZ5wiCP4BzcuFpjN8tbB9sp7LxIGYVK1F8AOEOqDgzvQNlSFILiCIHoAUPan65je_1pv/_ylt=A2Riqk4z75td.W4A_UmDTwx.;_ylu=X3oDMTEydXBzZHVoBHBvcwMxBHNlYwNzcgRzbGsDdGl0bGUEdnRpZANqcDA0MjA-/SIG=11sb7hin1/EXP=1570601203/**https%3A//news.goo.ne.jp/topstories/today/')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'今日のニュース - goo ニュース')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fdb3e8a-82af-49a9-aba2-26bd23cb927b",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b2ab4d55-4b3f-43db-8dcb-71259f58a04b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9712e159-f181-4306-84b3-e2d2d8770b65"]
+  }],
+  "urls": ["https://www.yahoo.co.jp/"],
+  "plugins": []
+}

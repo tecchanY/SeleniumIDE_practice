@@ -1,0 +1,103 @@
+{
+  "id": "0aaa1413-8cb6-459a-9ca1-5855a6e1fc4e",
+  "version": "2.0",
+  "name": "test",
+  "url": "http://example.selenium.jp/reserveApp/",
+  "tests": [{
+    "id": "fb18052a-087f-44c3-8fa8-725b7114208c",
+    "name": "Untitled",
+    "commands": [{
+      "id": "fd301f9a-12b5-43c0-a862-ae33acd93d48",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c91f2b8-eaa4-4df3-a62b-586eb3f55ea5",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58dfff39-af3c-428f-a4bf-d83fa730ded7",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6be581d7-40b0-4c55-b16b-541a970896ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=guestname",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fa919c2-4a29-419d-8fd8-58db724d5519",
+      "comment": "",
+      "command": "type",
+      "target": "id=guestname",
+      "targets": [
+        ["id=guestname", "id"],
+        ["name=gname", "name"],
+        ["css=#guestname", "css:finder"],
+        ["xpath=//input[@id='guestname']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/input[10]", "xpath:idRelative"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": "テストテストテスト"
+    }, {
+      "id": "e5e75930-6c85-4c7b-8917-e104e860cc98",
+      "comment": "",
+      "command": "click",
+      "target": "id=goto_next",
+      "targets": [
+        ["id=goto_next", "id"],
+        ["css=#goto_next", "css:finder"],
+        ["xpath=//button[@id='goto_next']", "xpath:attributes"],
+        ["xpath=//form[@id='reserve_info']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'次へ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00fc3f1f-791b-43d1-a7d1-24b9b7403670",
+      "comment": "",
+      "command": "click",
+      "target": "id=errorcheck_result",
+      "targets": [
+        ["id=errorcheck_result", "id"],
+        ["css=#errorcheck_result", "css:finder"],
+        ["xpath=//div[@id='errorcheck_result']", "xpath:attributes"],
+        ["xpath=//div[@id='slide1']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54f65dd4-e0d5-4480-9d43-57affeaf74a1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=errorcheck_result",
+      "targets": [
+        ["id=errorcheck_result", "id"],
+        ["css=#errorcheck_result", "css:finder"],
+        ["xpath=//div[@id='errorcheck_result']", "xpath:attributes"],
+        ["xpath=//div[@id='slide1']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": "宿泊日には、翌日以降の日付を指定してください。"
+    }]
+  }],
+  "suites": [{
+    "id": "e8754204-9cf3-4af9-a1c8-2718d1956ca3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fb18052a-087f-44c3-8fa8-725b7114208c"]
+  }],
+  "urls": ["http://example.selenium.jp/reserveApp/"],
+  "plugins": []
+}
